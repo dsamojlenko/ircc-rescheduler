@@ -56,6 +56,7 @@ class ReviewPage extends React.Component {
             fullName,
             email,
             paperFileNumber,
+            familyOption,
             reason,
             explanation,
           } = {},
@@ -93,8 +94,9 @@ class ReviewPage extends React.Component {
         <section>
           <Summary
             fullName={fullName}
-            email={email}
             paperFileNumber={paperFileNumber}
+            familyOption={familyOption}
+            email={email}
             explanation={explanation}
             reason={this.translateReason(reason)}
             selectedDays={days}

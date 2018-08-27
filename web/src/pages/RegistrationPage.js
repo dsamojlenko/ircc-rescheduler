@@ -18,7 +18,7 @@ import {
   getFieldErrorStrings,
 } from '../validation'
 import Validator from 'validatorjs'
-import { trimInput } from '../utils/cleanInput'
+import { trimInput, deleteEmptyArrayKeys } from '../utils/cleanInput'
 import Layout from '../components/Layout'
 import Title, { matchPropTypes } from '../components/Title'
 import {
@@ -26,7 +26,11 @@ import {
   TextAreaAdapter,
 } from '../components/forms/TextInput'
 import FieldSet from '../components/forms/FieldSet'
-import { Radio, RadioAdapter } from '../components/forms/MultipleChoice'
+import {
+  Radio,
+  RadioAdapter,
+  CheckboxAdapter,
+} from '../components/forms/MultipleChoice'
 import Button from '../components/forms/Button'
 import { ValidationMessage, ErrorList } from '../components/ErrorMessage'
 import { Form, Field } from 'react-final-form'
@@ -36,6 +40,35 @@ import { HashLink } from 'react-router-hash-link'
 import { windowExists } from '../utils/windowExists'
 import { checkURLParams } from '../utils/url'
 import { trackRegistrationErrors } from '../utils/analytics'
+
+const registerContentClass = css`
+  ${contentClass};
+
+  input[type='checkbox'] + label::before {
+    border: 3px solid ${theme.colour.black};
+    background-color: ${theme.colour.white};
+  }
+
+  textarea[name='familyOption'] {
+    height: 5.3em;
+  }
+
+  textarea[disabled] {
+    background: ${theme.colour.greyLight};
+    border: 3px solid #a4a4a4;
+    cursor: not-allowed;
+  }
+
+  label[for='familyCheck'] {
+    margin-top: ${theme.spacing.sm};
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  input[name='paperFileNumber'] {
+    margin-bottom: ${theme.spacing.sm};
+  }
+`
 
 const forNowSubmitErrorStyles = css`
   margin-bottom: 0 !important;
@@ -60,6 +93,10 @@ const labelNames = id => {
       return <Trans>Why are you rescheduling?</Trans>
     case 'explanation':
       return <Trans>Describe why you can’t attend your appointment</Trans>
+    case 'familyCheck':
+      return <Trans>Provide the names of your family members</Trans>
+    case 'familyOption':
+      return <Trans>Provide the names of your family members</Trans>
     default:
       return ''
   }
@@ -78,6 +115,7 @@ class RegistrationPage extends React.Component {
   }
 
   static validate(values, submitted) {
+    deleteEmptyArrayKeys(values)
     if (submitted || !windowExists()) {
       const validate = new Validator(
         trimInput(values),
@@ -159,7 +197,7 @@ class RegistrationPage extends React.Component {
     }
 
     return (
-      <Layout contentClass={contentClass}>
+      <Layout contentClass={registerContentClass}>
         <Title path={this.props.match.path} />
         <h1 className={visuallyhidden}>
           <Trans>First, provide some basic information:</Trans>
@@ -180,6 +218,7 @@ class RegistrationPage extends React.Component {
           render={({ handleSubmit, submitError, submitting, values }) => {
             const notValid = this.hasNotValid()
             const generalMessage = this.generalErrorMessage()
+            let { familyCheck = [] } = values
 
             submitError =
               Object.keys(errorsNoJS).length && !submitError
@@ -250,29 +289,6 @@ class RegistrationPage extends React.Component {
                   </Field>
                 </div>
                 <div>
-                  <Field component={TextFieldAdapter} name="email" id="email">
-                    <label htmlFor="email" id="email-label">
-                      <span id="email-header">
-                        <Trans>Email address</Trans>
-                      </span>
-                      <ValidationMessage
-                        id="email-error"
-                        message={
-                          submitError && this.validate(values).email
-                            ? this.validate(values).email
-                            : ''
-                        }
-                      />
-                      <span id="email-details">
-                        <Trans>
-                          This is where we’ll send a confirmation email when
-                          you’re done.
-                        </Trans>
-                      </span>
-                    </label>
-                  </Field>
-                </div>
-                <div>
                   <Field
                     component={TextFieldAdapter}
                     name="paperFileNumber"
@@ -294,6 +310,72 @@ class RegistrationPage extends React.Component {
                         <Trans>
                           This number is at the top of the email attachment we
                           sent you.
+                        </Trans>
+                      </span>
+                    </label>
+                  </Field>
+                </div>
+                <div>
+                  <Field
+                    name="familyOption"
+                    id="familyOption"
+                    component={TextAreaAdapter}
+                    disabled={!familyCheck.length}
+                  >
+                    <label htmlFor="familyOption" id="familyOption-label">
+                      <ValidationMessage
+                        id="familyCheck-label"
+                        message={
+                          submitError && this.validate(values).familyCheck
+                            ? this.validate(values).familyCheck
+                            : ''
+                        }
+                      />
+                      <Field
+                        type="checkbox"
+                        component={CheckboxAdapter}
+                        name="familyCheck"
+                        id="familyCheck"
+                        label={
+                          <Trans>I need to reschedule my family too</Trans>
+                        }
+                        value="familyCheck"
+                      />
+                      <ValidationMessage
+                        id="familyOption-error"
+                        message={
+                          submitError && this.validate(values).familyOption
+                            ? this.validate(values).familyOption
+                            : ''
+                        }
+                      />
+                      <span id="familyOption-details">
+                        <Trans>
+                          Provide the full name of each family member you want
+                          to reschedule.
+                        </Trans>
+                      </span>
+                    </label>
+                  </Field>
+                </div>
+                <div>
+                  <Field component={TextFieldAdapter} name="email" id="email">
+                    <label htmlFor="email" id="email-label">
+                      <span id="email-header">
+                        <Trans>Email address</Trans>
+                      </span>
+                      <ValidationMessage
+                        id="email-error"
+                        message={
+                          submitError && this.validate(values).email
+                            ? this.validate(values).email
+                            : ''
+                        }
+                      />
+                      <span id="email-details">
+                        <Trans>
+                          This is where we’ll send a confirmation email when
+                          you’re done.
                         </Trans>
                       </span>
                     </label>

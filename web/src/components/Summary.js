@@ -104,6 +104,7 @@ const Summary = ({
   fullName,
   email,
   paperFileNumber,
+  familyOption,
   reason,
   explanation,
   availabilityExplanation,
@@ -131,6 +132,14 @@ const Summary = ({
         i18n && `${i18n._('Change')} ${i18n._('Paper file number')}`
       }
     />
+    {familyOption && (
+      <SummaryRow
+        summaryHeader={<Trans>Family members</Trans>}
+        summaryBody={familyOption}
+        summaryLink={'/register#familyOption-label'}
+        summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Family members')}`}
+      />
+    )}
     <SummaryRow
       summaryHeader={<Trans>Reason</Trans>}
       summaryBody={reason}
