@@ -108,8 +108,13 @@ class RegistrationPage extends React.Component {
     return getFieldNames(RegistrationFields)
   }
 
-  static get redirect() {
-    return '/calendar'
+  static redirect(store = {}) {
+    let { explanation: { explanationPage } = {} } = store
+    return explanationPage ? '/explanation' : '/calendar'
+  }
+
+  get name() {
+    return 'Page'
   }
 
   static validate(values, submitted) {
@@ -175,7 +180,7 @@ class RegistrationPage extends React.Component {
     // if setStore doesn't exist, nothing gets saved between pages
     await this.props.context.setStore(this.props.match.path.slice(1), values)
 
-    await this.props.history.push(this.redirect)
+    await this.props.history.push(this.redirect(this.props.context.store))
   }
 
   render() {
@@ -208,6 +213,7 @@ class RegistrationPage extends React.Component {
         <div style={{ display: 'none' }}>
           <Radio id="ignore-me" value="ignore-me" />
         </div>
+
         <Form
           onSubmit={this.onSubmit}
           initialValues={register || {}}

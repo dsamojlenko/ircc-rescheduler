@@ -78,8 +78,10 @@ class ReviewPage extends React.Component {
       <Layout contentClass={contentClass}>
         <Title path={this.props.match.path} />
         <TopContainer>
-          <pre>{explanationPage}</pre>
-          <NavLink className="chevron-link" to="/calendar">
+          <NavLink
+            className="chevron-link"
+            to={explanationPage ? '/explanation' : '/calendar'}
+          >
             <Chevron dir="left" />
             <Trans>Go back</Trans>
           </NavLink>
@@ -96,6 +98,7 @@ class ReviewPage extends React.Component {
             explanation={explanation}
             reason={this.translateReason(reason)}
             selectedDays={days}
+            availabilityExplanation={explanationPage}
           />
           <Reminder>
             <Trans>
