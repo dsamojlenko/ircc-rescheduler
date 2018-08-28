@@ -68,6 +68,18 @@
       [
         "src/validation.js",
         69
+      ],
+      [
+        "src/validation.js",
+        82
+      ]
+    ]
+  },
+  "Please tell us why you aren’t available on any of the upcoming days.": {
+    "origin": [
+      [
+        "src/validation.js",
+        76
       ]
     ]
   },
@@ -75,11 +87,11 @@
     "origin": [
       [
         "src/validation.js",
-        76
+        89
       ],
       [
         "src/validation.js",
-        80
+        93
       ]
     ]
   },
@@ -87,7 +99,7 @@
     "origin": [
       [
         "src/validation.js",
-        84
+        97
       ]
     ]
   },
@@ -95,7 +107,7 @@
     "origin": [
       [
         "src/validation.js",
-        88
+        101
       ]
     ]
   }

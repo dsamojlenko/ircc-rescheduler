@@ -77,7 +77,8 @@ export const SummaryRow = ({
       <SummaryH2>{summaryHeader}</SummaryH2>
       <SummaryBody>{summaryBody}</SummaryBody>
     </SummaryHeader>
-    {summaryLink === '/register#explanation-label' ? (
+    {summaryLink === '/register#explanation-label' ||
+    summaryLink === '/explanation#explanationPage-label' ? (
       <SummaryLinkExplanation>
         <NavLink to={summaryLink} aria-label={summaryLabel}>
           <Trans>Change</Trans>
@@ -105,6 +106,7 @@ const Summary = ({
   paperFileNumber,
   reason,
   explanation,
+  availabilityExplanation,
   selectedDays,
   i18n,
 }) => (
@@ -141,12 +143,22 @@ const Summary = ({
       summaryLink={'/register#explanation-label'}
       summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Explanation')}`}
     />
-    <SummaryRow
-      summaryHeader={<Trans>Availability</Trans>}
-      summaryBody={<SelectedDayList selectedDays={selectedDays} />}
-      summaryLink={'/calendar#calendar-header'}
-      summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Availability')}`}
-    />
+
+    {!availabilityExplanation ? (
+      <SummaryRow
+        summaryHeader={<Trans>Availability</Trans>}
+        summaryBody={<SelectedDayList selectedDays={selectedDays} />}
+        summaryLink={'/calendar#calendar-header'}
+        summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Availability')}`}
+      />
+    ) : (
+      <SummaryRow
+        summaryHeader={<Trans>Availability</Trans>}
+        summaryBody={availabilityExplanation}
+        summaryLink={'/explanation#explanationPage-label'}
+        summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Availability')}`}
+      />
+    )}
   </TableContainer>
 )
 
@@ -157,6 +169,7 @@ Summary.propTypes = {
   explanation: PropTypes.string,
   paperFileNumber: PropTypes.string,
   selectedDays: PropTypes.array,
+  availabilityExplanation: PropTypes.string,
   i18n: PropTypes.object,
 }
 

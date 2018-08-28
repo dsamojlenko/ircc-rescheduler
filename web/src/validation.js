@@ -72,6 +72,19 @@ errorMessages.explanationMaxErrorMessage = (
   </Trans>
 )
 
+errorMessages.explanationPageErrorMessage = (
+  <Trans>
+    Please tell us why you aren’t available on any of the upcoming days.
+  </Trans>
+)
+
+errorMessages.explanationPageMaxErrorMessage = (
+  <Trans>
+    Sorry, there‘s a limit of 150 words for this explanation. Please shorten
+    your explanation.
+  </Trans>
+)
+
 errorMessages.selectedDaysEmptyErrorMessage = (
   <Trans>You must select 3 days.</Trans>
 )
@@ -99,6 +112,8 @@ export const defaultMessages = {
   'required.reason': 'reasonErrorMessage',
   'required.explanation': 'explanationErrorMessage',
   'max.explanation': 'explanationMaxErrorMessage',
+  'required.explanationPage': 'explanationPageErrorMessage',
+  'max.explanationPage': 'explanationPageMaxErrorMessage',
   'required.selectedDays': 'selectedDaysEmptyErrorMessage',
   in: 'inErrorMessage',
 }
@@ -128,6 +143,10 @@ export const RegistrationFields = {
   explanation: `required|max:${TEXTAREA_MAX_CHARS}`,
   paperFileNumber: 'required|paper_file_number',
   reason: 'required|in:travel,medical,workOrSchool,family,other',
+}
+
+export const ExplanationFields = {
+  explanationPage: `required|max:${INPUT_FIELD_MAX_CHARS}`,
 }
 
 export const CalendarFields = {
