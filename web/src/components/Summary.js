@@ -71,7 +71,6 @@ export const SummaryRow = ({
   summaryBody,
   summaryLink,
   summaryLabel,
-  summaryAvailabilityExplanation,
 }) => (
   <Row>
     <SummaryHeader>
@@ -170,6 +169,7 @@ Summary.propTypes = {
   explanation: PropTypes.string,
   paperFileNumber: PropTypes.string,
   selectedDays: PropTypes.array,
+  availabilityExplanation: PropTypes.string,
   i18n: PropTypes.object,
 }
 
