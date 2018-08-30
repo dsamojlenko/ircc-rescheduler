@@ -31,7 +31,7 @@
       ]
     ]
   },
-  "We need your paper file number so we can confirm your identity.": {
+  "Please remove your family members’ names if you are not rescheduling them.": {
     "origin": [
       [
         "src/validation.js",
@@ -39,11 +39,35 @@
       ]
     ]
   },
+  "You left this blank. Do you want to reschedule any members of your family? Please provide their full names.": {
+    "origin": [
+      [
+        "src/validation.js",
+        51
+      ]
+    ]
+  },
+  "There is a limit of 150 words for your family’s names. Please shorten your explanation.": {
+    "origin": [
+      [
+        "src/validation.js",
+        58
+      ]
+    ]
+  },
+  "We need your paper file number so we can confirm your identity.": {
+    "origin": [
+      [
+        "src/validation.js",
+        65
+      ]
+    ]
+  },
   "Needs a number with a different format. Please make sure this is your correct Paper file number.": {
     "origin": [
       [
         "src/validation.js",
-        49
+        69
       ]
     ]
   },
@@ -51,7 +75,7 @@
     "origin": [
       [
         "src/validation.js",
-        56
+        76
       ]
     ]
   },
@@ -59,7 +83,7 @@
     "origin": [
       [
         "src/validation.js",
-        63
+        83
       ]
     ]
   },
@@ -67,11 +91,11 @@
     "origin": [
       [
         "src/validation.js",
-        69
+        89
       ],
       [
         "src/validation.js",
-        82
+        102
       ]
     ]
   },
@@ -79,7 +103,7 @@
     "origin": [
       [
         "src/validation.js",
-        76
+        96
       ]
     ]
   },
@@ -87,11 +111,11 @@
     "origin": [
       [
         "src/validation.js",
-        89
+        109
       ],
       [
         "src/validation.js",
-        93
+        113
       ]
     ]
   },
@@ -99,7 +123,7 @@
     "origin": [
       [
         "src/validation.js",
-        97
+        117
       ]
     ]
   },
@@ -107,7 +131,7 @@
     "origin": [
       [
         "src/validation.js",
-        101
+        121
       ]
     ]
   }

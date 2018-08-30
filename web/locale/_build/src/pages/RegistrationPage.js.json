@@ -3,11 +3,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        54
+        87
       ],
       [
         "src/pages/RegistrationPage.js",
-        233
+        272
       ]
     ]
   },
@@ -15,11 +15,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        56
+        89
       ],
       [
         "src/pages/RegistrationPage.js",
-        256
+        365
       ]
     ]
   },
@@ -27,11 +27,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        58
+        91
       ],
       [
         "src/pages/RegistrationPage.js",
-        283
+        299
       ]
     ]
   },
@@ -39,7 +39,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        60
+        93
       ]
     ]
   },
@@ -47,11 +47,23 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        62
+        95
       ],
       [
         "src/pages/RegistrationPage.js",
-        367
+        449
+      ]
+    ]
+  },
+  "Provide the names of your family members": {
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        97
+      ],
+      [
+        "src/pages/RegistrationPage.js",
+        99
       ]
     ]
   },
@@ -59,7 +71,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        111
+        149
       ]
     ]
   },
@@ -67,7 +79,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        165
+        203
       ]
     ]
   },
@@ -75,15 +87,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        244
-      ]
-    ]
-  },
-  "This is where we’ll send a confirmation email when you’re done.": {
-    "origin": [
-      [
-        "src/pages/RegistrationPage.js",
-        267
+        283
       ]
     ]
   },
@@ -91,7 +95,31 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        294
+        310
+      ]
+    ]
+  },
+  "I need to reschedule my family too": {
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        340
+      ]
+    ]
+  },
+  "Provide the full name of each family member you want to reschedule.": {
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        353
+      ]
+    ]
+  },
+  "This is where we’ll send a confirmation email when you’re done.": {
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        376
       ]
     ]
   },
@@ -99,7 +127,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        319
+        401
       ]
     ]
   },
@@ -107,7 +135,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        327
+        409
       ]
     ]
   },
@@ -115,7 +143,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        335
+        417
       ]
     ]
   },
@@ -123,7 +151,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        343
+        425
       ]
     ]
   },
@@ -131,7 +159,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        351
+        433
       ]
     ]
   },
@@ -139,7 +167,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        380
+        462
       ]
     ]
   },
@@ -147,7 +175,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        398
+        480
       ]
     ]
   }

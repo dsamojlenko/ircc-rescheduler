@@ -44,19 +44,19 @@
     "origin": [
       [
         "src/components/Summary.js",
-        149
+        158
       ],
       [
         "src/components/Summary.js",
-        152
+        161
       ],
       [
         "src/components/Summary.js",
-        156
+        165
       ],
       [
         "src/components/Summary.js",
-        159
+        168
       ]
     ]
   },
@@ -100,31 +100,35 @@
       ],
       [
         "src/components/Summary.js",
-        118
+        119
       ],
       [
         "src/components/Summary.js",
-        124
+        125
       ],
       [
         "src/components/Summary.js",
-        131
+        132
       ],
       [
         "src/components/Summary.js",
-        138
+        140
       ],
       [
         "src/components/Summary.js",
-        144
+        147
       ],
       [
         "src/components/Summary.js",
-        152
+        153
       ],
       [
         "src/components/Summary.js",
-        159
+        161
+      ],
+      [
+        "src/components/Summary.js",
+        168
       ]
     ]
   },
@@ -155,7 +159,7 @@
       ],
       [
         "src/pages/RegistrationPage.js",
-        398
+        480
       ]
     ]
   },
@@ -186,11 +190,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        62
+        95
       ],
       [
         "src/pages/RegistrationPage.js",
-        367
+        449
       ]
     ]
   },
@@ -208,7 +212,7 @@
     "origin": [
       [
         "src/pages/ReviewPage.js",
-        115
+        117
       ]
     ]
   },
@@ -217,11 +221,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        121
+        122
       ],
       [
         "src/components/Summary.js",
-        124
+        125
       ]
     ]
   },
@@ -230,11 +234,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        56
+        89
       ],
       [
         "src/pages/RegistrationPage.js",
-        256
+        365
       ]
     ]
   },
@@ -256,7 +260,7 @@
     "origin": [
       [
         "src/validation.js",
-        97
+        117
       ]
     ]
   },
@@ -265,11 +269,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        141
+        150
       ],
       [
         "src/components/Summary.js",
-        144
+        153
       ]
     ]
   },
@@ -278,11 +282,24 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        343
+        425
       ],
       [
         "src/pages/ReviewPage.js",
         39
+      ]
+    ]
+  },
+  "Family members": {
+    "translation": "Membres de ma famille",
+    "origin": [
+      [
+        "src/components/Summary.js",
+        137
+      ],
+      [
+        "src/components/Summary.js",
+        140
       ]
     ]
   },
@@ -300,7 +317,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        165
+        203
       ]
     ]
   },
@@ -340,19 +357,19 @@
     "origin": [
       [
         "src/components/Summary.js",
-        115
+        116
       ],
       [
         "src/components/Summary.js",
-        118
+        119
       ],
       [
         "src/pages/RegistrationPage.js",
-        54
+        87
       ],
       [
         "src/pages/RegistrationPage.js",
-        233
+        272
       ]
     ]
   },
@@ -365,7 +382,7 @@
       ],
       [
         "src/pages/ReviewPage.js",
-        86
+        87
       ]
     ]
   },
@@ -379,6 +396,15 @@
       [
         "src/pages/FourOhFourPage.js",
         39
+      ]
+    ]
+  },
+  "I need to reschedule my family too": {
+    "translation": "J’ai aussi besoin de reporter le rendez-vous de membres de ma famille",
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        340
       ]
     ]
   },
@@ -512,7 +538,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        327
+        409
       ],
       [
         "src/pages/ReviewPage.js",
@@ -556,7 +582,7 @@
     "origin": [
       [
         "src/validation.js",
-        49
+        69
       ]
     ]
   },
@@ -619,7 +645,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        351
+        433
       ],
       [
         "src/pages/ReviewPage.js",
@@ -659,19 +685,19 @@
     "origin": [
       [
         "src/components/Summary.js",
-        127
+        128
       ],
       [
         "src/components/Summary.js",
-        131
+        132
       ],
       [
         "src/pages/RegistrationPage.js",
-        58
+        91
       ],
       [
         "src/pages/RegistrationPage.js",
-        283
+        299
       ]
     ]
   },
@@ -724,6 +750,15 @@
       ]
     ]
   },
+  "Please remove your family members’ names if you are not rescheduling them.": {
+    "translation": "Veuillez supprimer les noms des membres de votre famille si vous ne les désirez reporter le rendez-vous",
+    "origin": [
+      [
+        "src/validation.js",
+        45
+      ]
+    ]
+  },
   "Please select 1 more day to continue.": {
     "translation": "Veuillez sélectionner 1 autre jour pour continuer.",
     "origin": [
@@ -756,7 +791,7 @@
     "origin": [
       [
         "src/validation.js",
-        63
+        83
       ]
     ]
   },
@@ -765,7 +800,7 @@
     "origin": [
       [
         "src/validation.js",
-        76
+        96
       ]
     ]
   },
@@ -774,7 +809,7 @@
     "origin": [
       [
         "src/validation.js",
-        56
+        76
       ]
     ]
   },
@@ -796,7 +831,7 @@
       ],
       [
         "src/pages/RegistrationPage.js",
-        380
+        462
       ]
     ]
   },
@@ -809,16 +844,38 @@
       ]
     ]
   },
+  "Provide the full name of each family member you want to reschedule.": {
+    "translation": "Veuillez indiquer le nom de chaque membre de votre famille pour qui vous désirez reporter le rendez-vous.",
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        353
+      ]
+    ]
+  },
+  "Provide the names of your family members": {
+    "translation": "Veuillez indiquer le nom de chaque membre de votre famille",
+    "origin": [
+      [
+        "src/pages/RegistrationPage.js",
+        97
+      ],
+      [
+        "src/pages/RegistrationPage.js",
+        99
+      ]
+    ]
+  },
   "Reason": {
     "translation": "Raison",
     "origin": [
       [
         "src/components/Summary.js",
-        135
+        144
       ],
       [
         "src/components/Summary.js",
-        138
+        147
       ]
     ]
   },
@@ -827,7 +884,7 @@
     "origin": [
       [
         "src/validation.js",
-        101
+        121
       ]
     ]
   },
@@ -916,7 +973,7 @@
     "origin": [
       [
         "src/pages/ReviewPage.js",
-        90
+        91
       ]
     ]
   },
@@ -979,7 +1036,7 @@
     "origin": [
       [
         "src/pages/ReviewPage.js",
-        111
+        113
       ]
     ]
   },
@@ -1010,7 +1067,7 @@
       ],
       [
         "src/pages/RegistrationPage.js",
-        111
+        149
       ]
     ]
   },
@@ -1059,11 +1116,11 @@
     "origin": [
       [
         "src/validation.js",
-        69
+        89
       ],
       [
         "src/validation.js",
-        82
+        102
       ]
     ]
   },
@@ -1139,6 +1196,15 @@
       ]
     ]
   },
+  "There is a limit of 150 words for your family’s names. Please shorten your explanation.": {
+    "translation": "Il y a une limite de 150 mots. Veuillez raccourcir votre explication.",
+    "origin": [
+      [
+        "src/validation.js",
+        58
+      ]
+    ]
+  },
   "This is a new service, help us improve by": {
     "translation": "Il s’agit d’un nouveau service. Aidez-nous à l’améliorer en nous",
     "origin": [
@@ -1153,7 +1219,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        244
+        283
       ]
     ]
   },
@@ -1162,7 +1228,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        267
+        376
       ]
     ]
   },
@@ -1171,7 +1237,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        294
+        310
       ]
     ]
   },
@@ -1242,7 +1308,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        319
+        401
       ]
     ]
   },
@@ -1300,7 +1366,7 @@
     "origin": [
       [
         "src/validation.js",
-        45
+        65
       ]
     ]
   },
@@ -1362,7 +1428,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        60
+        93
       ]
     ]
   },
@@ -1380,7 +1446,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        335
+        417
       ]
     ]
   },
@@ -1393,6 +1459,15 @@
       ]
     ]
   },
+  "You left this blank. Do you want to reschedule any members of your family? Please provide their full names.": {
+    "translation": "Vous avez laissé cette case vide. Aimeriez-vous reporter le rendez-vous pour des membres de votre famille? Veuillez indiquer leurs noms.",
+    "origin": [
+      [
+        "src/validation.js",
+        51
+      ]
+    ]
+  },
   "You must select 3 days.": {
     "translation": "Vous devez sélectionner 3 jours.",
     "origin": [
@@ -1402,11 +1477,11 @@
       ],
       [
         "src/validation.js",
-        89
+        109
       ],
       [
         "src/validation.js",
-        93
+        113
       ]
     ]
   },
@@ -1424,7 +1499,7 @@
     "origin": [
       [
         "src/pages/ReviewPage.js",
-        105
+        107
       ]
     ]
   },
@@ -1505,7 +1580,7 @@
     "origin": [
       [
         "src/pages/ReviewPage.js",
-        117
+        119
       ]
     ]
   },
