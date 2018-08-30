@@ -132,7 +132,11 @@ server
   .use(bodyParser.urlencoded({ extended: false }))
   .post('/submit', async (req, res) => {
     let input = Object.assign({}, req.body) // make a new object
-    input.selectedDays = cleanDates(input.selectedDays)
+    /* THIS IS JUST FOR TESTING SO THAT PEOPLE CAN HIT THE CONFIRMATION PAGE */
+    /* THIS IS NOT EVER GOING INTO THE LIVE SERVICE */
+    input.selectedDays = cleanDates(
+      input.selectedDays || '2018-01-01,2018-01-02,2018-01-03',
+    )
 
     const validateReg = new Validator(input, RegistrationFields)
     const validateCal = new Validator(input, CalendarFields)
