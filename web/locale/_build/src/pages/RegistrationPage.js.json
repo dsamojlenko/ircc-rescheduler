@@ -3,11 +3,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        90
+        54
       ],
       [
         "src/pages/RegistrationPage.js",
-        267
+        233
       ]
     ]
   },
@@ -15,11 +15,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        92
+        56
       ],
       [
         "src/pages/RegistrationPage.js",
-        290
+        256
       ]
     ]
   },
@@ -27,11 +27,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        94
+        58
       ],
       [
         "src/pages/RegistrationPage.js",
-        317
+        283
       ]
     ]
   },
@@ -39,7 +39,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        96
+        60
       ]
     ]
   },
@@ -47,11 +47,11 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        98
+        62
       ],
       [
         "src/pages/RegistrationPage.js",
-        401
+        367
       ]
     ]
   },
@@ -59,7 +59,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        146
+        111
       ]
     ]
   },
@@ -67,7 +67,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        200
+        165
       ]
     ]
   },
@@ -75,7 +75,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        278
+        244
       ]
     ]
   },
@@ -83,7 +83,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        301
+        267
       ]
     ]
   },
@@ -91,7 +91,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        328
+        294
       ]
     ]
   },
@@ -99,7 +99,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        353
+        319
       ]
     ]
   },
@@ -107,7 +107,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        361
+        327
       ]
     ]
   },
@@ -115,7 +115,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        369
+        335
       ]
     ]
   },
@@ -123,7 +123,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        377
+        343
       ]
     ]
   },
@@ -131,7 +131,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        385
+        351
       ]
     ]
   },
@@ -139,7 +139,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        414
+        380
       ]
     ]
   },
@@ -147,7 +147,7 @@
     "origin": [
       [
         "src/pages/RegistrationPage.js",
-        432
+        398
       ]
     ]
   }

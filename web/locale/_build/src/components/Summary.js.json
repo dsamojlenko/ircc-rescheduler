@@ -3,35 +3,39 @@
     "origin": [
       [
         "src/components/Summary.js",
-        83
+        84
       ],
       [
         "src/components/Summary.js",
-        89
+        90
       ],
       [
         "src/components/Summary.js",
-        116
+        118
       ],
       [
         "src/components/Summary.js",
-        122
+        124
       ],
       [
         "src/components/Summary.js",
-        129
+        131
       ],
       [
         "src/components/Summary.js",
-        136
+        138
       ],
       [
         "src/components/Summary.js",
-        142
+        144
       ],
       [
         "src/components/Summary.js",
-        148
+        152
+      ],
+      [
+        "src/components/Summary.js",
+        159
       ]
     ]
   },
@@ -39,11 +43,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        113
+        115
       ],
       [
         "src/components/Summary.js",
-        116
+        118
       ]
     ]
   },
@@ -51,11 +55,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        119
+        121
       ],
       [
         "src/components/Summary.js",
-        122
+        124
       ]
     ]
   },
@@ -63,11 +67,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        125
+        127
       ],
       [
         "src/components/Summary.js",
-        129
+        131
       ]
     ]
   },
@@ -75,11 +79,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        133
+        135
       ],
       [
         "src/components/Summary.js",
-        136
+        138
       ]
     ]
   },
@@ -87,11 +91,11 @@
     "origin": [
       [
         "src/components/Summary.js",
-        139
+        141
       ],
       [
         "src/components/Summary.js",
-        142
+        144
       ]
     ]
   },
@@ -99,11 +103,19 @@
     "origin": [
       [
         "src/components/Summary.js",
-        145
+        149
       ],
       [
         "src/components/Summary.js",
-        148
+        152
+      ],
+      [
+        "src/components/Summary.js",
+        156
+      ],
+      [
+        "src/components/Summary.js",
+        159
       ]
     ]
   }
