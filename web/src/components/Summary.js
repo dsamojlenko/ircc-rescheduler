@@ -119,12 +119,6 @@ const Summary = ({
       summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Full name')}`}
     />
     <SummaryRow
-      summaryHeader={<Trans>Email</Trans>}
-      summaryBody={email}
-      summaryLink={'/register#email-label'}
-      summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Email')}`}
-    />
-    <SummaryRow
       summaryHeader={<Trans>Paper file number</Trans>}
       summaryBody={paperFileNumber}
       summaryLink={'/register#paperFileNumber-label'}
@@ -140,6 +134,12 @@ const Summary = ({
         summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Family members')}`}
       />
     )}
+    <SummaryRow
+      summaryHeader={<Trans>Email</Trans>}
+      summaryBody={email}
+      summaryLink={'/register#email-label'}
+      summaryLabel={i18n && `${i18n._('Change')} ${i18n._('Email')}`}
+    />
     <SummaryRow
       summaryHeader={<Trans>Reason</Trans>}
       summaryBody={reason}
